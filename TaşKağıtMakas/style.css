@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.scoreboard {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.scoreboard h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.scoreboard p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.choice {
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.choice:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #fff;
+}

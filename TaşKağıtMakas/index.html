@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taş Kağıt Makas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Taş Kağıt Makas</h1>
+      <div class="scoreboard">
+        <h2>Skor</h2>
+        <p>Senin Skorun: <span id="user-score">0</span></p>
+        <p>Bilgisayarın Skoru: <span id="computer-score">0</span></p>
+      </div>
+      <div class="choices">
+        <button id="rock" class="choice">Taş</button>
+        <button id="paper" class="choice">Kağıt</button>
+        <button id="scissors" class="choice">Makas</button>
+      </div>
+      <div class="result">
+        <p id="user-choice">Senin Seçimin:</p>
+        <p id="computer-choice">Bilgisayarın Seçimi:</p>
+        <p id="result-message"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
