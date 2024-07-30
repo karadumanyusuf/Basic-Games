@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Oyunu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-grid" id="game-grid"></div>
+        <div class="sidebar">
+            <h1>Tetris</h1>
+            <div id="scoreboard">
+                <p>Skor: <span id="score">0</span></p>
+                <p>Zaman: <span id="time">0</span> saniye</p>
+                <p>Zorluk: <span id="difficulty">Kolay</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Start Popup -->
+    <div id="start-popup" class="popup">
+        <div class="popup-content">
+            <h2>Tetris</h2>
+            <p>Oyuna başlamak için "Başla" butonuna tıklayın.</p>
+            <button id="start-button-popup">Başla</button>
+        </div>
+    </div>
+
+    <!-- Game Over Popup -->
+    <div id="gameover-popup" class="popup">
+        <div class="popup-content">
+            <h2>Oyun Bitti</h2>
+            <p>Skor: <span id="final-score">0</span></p>
+            <p>Zaman: <span id="final-time">0</span> saniye</p>
+            <button id="restart-button">Tekrar Oyna</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf8ef;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#score-container {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: #cdc1b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #776e65;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 4px solid #bbada0;  
+   
+}
+
+.tile-2 { background-color: #eee4da; color: #776e65; }
+.tile-4 { background-color: #ede0c8; color: #776e65; }
+.tile-8 { background-color: #f2b179; color: #f9f6f2; }
+.tile-16 { background-color: #f59563; color: #f9f6f2; }
+.tile-32 { background-color: #f67c5f; color: #f9f6f2; }
+.tile-64 { background-color: #f65e3b; color: #f9f6f2; }
+.tile-128 { background-color: #edcf72; color: #f9f6f2; }
+.tile-256 { background-color: #edcc61; color: #f9f6f2; }
+.tile-512 { background-color: #edc850; color: #f9f6f2; }
+.tile-1024 { background-color: #edc53f; color: #f9f6f2; }
+.tile-2048 { background-color: #edc22e; color: #f9f6f2; }
+
+.hidden{
+    display: none;
+}
+
+#game-over {
+    position: fixed;
+    margin: 50%;
+    background-color: transparent;
+    display: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 250px;
+}
+
+
+#game-over-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #776e65;
+    height: 200px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+#retry-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #8f7a66;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#retry-button:hover {
+    background-color: #9c806d;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Hangman</h1>
+      <div id="category-selection">
+        <p>Select a category:</p>
+        <button class="category-btn" data-category="plants-fruits-vegetables">
+          Plants, Fruits and Vegetables
+        </button>
+        <button class="category-btn" data-category="objects">Objects</button>
+        <button class="category-btn" data-category="animals">Animals</button>
+        <button class="category-btn" data-category="space">Space</button>
+      </div>
+      <canvas
+        id="hangman-canvas"
+        width="200"
+        height="200"
+        style="display: none"
+      ></canvas>
+      <div id="word" style="display: none"></div>
+      <div class="letter-buttons" style="display: none">
+        <!-- Buttons will be dynamically generated here -->
+      </div>
+      <div id="message"></div>
+      <button id="restart-btn" style="display: none">Restart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

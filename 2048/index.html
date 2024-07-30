@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>2048 Game</h1>
+    <div id="score-container">Skor: <span id="score">0</span></div>
+    <div id="game-board">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+    <div id="game-over" class="hidden">
+      <div id="game-over-content">
+        <p>Oyun Bitti</p>
+        <p>Skor: <span id="final-score">0</span></p>
+        <button id="retry-button">Tekrar Dene</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

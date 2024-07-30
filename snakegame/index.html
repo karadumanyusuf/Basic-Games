@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yılan Oyunu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Yılan Oyunu</h1>
+    <div id="game-board"></div>
+    <div id="score">Skor: 0</div>
+    <div id="game-over-popup" class="hidden">
+      <div id="game-over-content">
+        <h2>Oyun Bitti!</h2>
+        <p id="final-score"></p>
+        <button onclick="restartGame()">Yeniden Başlat</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

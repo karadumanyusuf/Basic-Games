@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#difficulty-selection {
+    margin-bottom: 20px;
+}
+
+#difficulty-selection button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#difficulty-selection button:hover {
+    background-color: #45a049;
+}
+
+#sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    gap: 1px;
+    justify-content: center;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Hücrelerin genel stili */
+input {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+/* 3x3 blokların dış sınırları */
+input[data-row="0"],
+input[data-row="3"],
+input[data-row="6"] {
+    border-top: 3px solid #000;
+}
+
+input[data-row="2"],
+input[data-row="5"],
+input[data-row="8"] {
+    border-bottom: 3px solid #000;
+}
+
+input[data-col="0"],
+input[data-col="3"],
+input[data-col="6"] {
+    border-left: 3px solid #000;
+}
+
+input[data-col="2"],
+input[data-col="5"],
+input[data-col="8"] {
+    border-right: 3px solid #000;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Pop-up stili */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#easy, #medium, #hard{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 4px;
+}

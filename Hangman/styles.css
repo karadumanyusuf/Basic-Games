@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Allow absolute positioning of inner elements */
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#category-selection {
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-btn:hover {
+    background-color: #555;
+}
+
+#game-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Allow absolute positioning of inner elements */
+    margin-top: 100px; /* Space for the hangman canvas */
+}
+
+#hangman-canvas {
+    background-color: #f4f4f4;
+    border: 1px solid #333;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px; /* Adjust this value to position the canvas above other elements */
+    left: 50%;
+    transform: translate(-50%, 0); /* Center horizontally */
+    z-index: 1; /* Ensure it's below the word and buttons */
+}
+
+#word {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    margin: 20px 0;
+    position: relative; /* Ensure it's on top of the canvas */
+    z-index: 2;
+    top: 50%;
+}
+
+.letter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative; /* Ensure it's on top of the canvas */
+    z-index: 2;
+    top: 50%;
+
+}
+
+.letter-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+}
+
+.letter-buttons button:hover {
+    background-color: #555;
+}
+
+#message {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #FF5722;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, 0); /* Center horizontally */
+margin-top: 3px;
+    position: absolute;
+
+}
+
+#restart-btn:hover {
+    background-color: #555;
+}
