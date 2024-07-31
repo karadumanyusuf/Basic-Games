@@ -1,13 +1,10 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const shapes = ['circle', 'triangle', 'square', 'star', 'diamond', 'hexagon', 'oval', 'parallelogram'];
-    const cards = [...shapes, ...shapes]; // 8 çift farklı şekil
+    const cards = [...shapes, ...shapes]; 
     const gameContainer = document.querySelector('.game-container');
 
-    // Kartları rastgele sıraya koy
     shuffle(cards);
 
-    // Kartları oluştur ve konteynıra ekle
     cards.forEach(shape => {
         const card = document.createElement('div');
         card.classList.add('card');

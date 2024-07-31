@@ -1,4 +1,3 @@
-// scripts.js
 let sequence = [];
 let userSequence = [];
 let level = 0;
